@@ -10,7 +10,9 @@ var server = http.createServer(function (request, response) {
 	+"Platform:    " + os.platform()  + "\n"
 	+"Hostname:    " + os.hostname()  + "\n"
 	+"Free Memmory:" + os.totalmem()/(1024*1024) + "/" +os.freemem()/(1024*1024) + "MB\n"
-	+"CPU's:" + JSON.stringify(os.cpus())
+	+"CPU's:       " + JSON.stringify(os.cpus()) + "\n\n" 
+
+	+"Network:     " + JSON.stringify(os.networkInterfaces())
 
   	);
 });
